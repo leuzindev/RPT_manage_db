@@ -1,15 +1,15 @@
 # SYSTEM
 
-#Modelo das Migrations X
+#Modelo das Migrations XM
 
 
-#Pagina de Login X 
+#Pagina de Login XM
 
 
 #Pagina de Listagem de Produtos X
 
 
-#Rotas X
+#Rotas XM
 
 
 #Sistema de Login  X
@@ -19,6 +19,9 @@
 
 
 #Responsividade 
+
+
+#Pagina de Cadastro XM
 
 
 
