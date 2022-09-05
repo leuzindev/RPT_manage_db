@@ -1,27 +1,27 @@
 # SYSTEM
 
-#Modelo das Migrations XM
+#Modelo das Migrations (X F)
 
 
-#Pagina de Login XM
+#Pagina de Login  ---> Redirecionamento para pag de Cadastro
 
 
-#Pagina de Listagem de Produtos X
+#Pagina de Listagem de Produtos (X)
 
 
-#Rotas XM
+#Rotas (X F)
 
 
-#Sistema de Login  X
+#Sistema de Login  (X)
 
 
-#Sistema de Logout  X
+#Sistema de Logout (X)
 
 
-#Responsividade 
+#Responsividade  ---> Arrumar a responsividade da pag
 
 
-#Pagina de Cadastro XM
+#Pagina de Cadastro  ---> Criação de Usuario no Banco de dados
 
 
 
