@@ -1,0 +1,33 @@
+body{
+    background-color:  #2C3034;
+}
+
+.principal{
+    display: flex;
+    justify-content: center;
+     
+}
+
+.tabela__principal{
+    justify-content: center;
+    border-left: 2px solid white ;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    width: 90%;
+}
+
+.input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback)
+{
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+.td__checkbox{
+    display: flex;
+    justify-content: center;
+}
+
+.checkbox__action{
+    height: 50px;
+    width: 25px;
+    
+}
+

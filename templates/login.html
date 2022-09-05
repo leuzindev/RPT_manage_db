@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<title>Login</title>
+
+<link rel="stylesheet" href="{% static '/css/loginpage_1.css' %}">
+
+    <div class="main-login">
+
+        <div class="main-container">
+            <div class="right-login">
+                <form action="{% url 'login' %}" method="POST">
+                {% csrf_token %}
+                <div class="card-login">
+                    <h1>BEM-VINDO</h1><br>
+                    <div class="textfield">
+                        <label for="usuario">Email</label>
+                        <input type="email" name="email" placeholder="Email" class="usuariojs">
+                    </div>
+                    <div class="textfield">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" placeholder="Senha" class="senhajs">
+                    </div>
+                        <button type="submit"class="btn-login">Login</button>
+                </div>
+                </form>
+            </div>
+            <div class="left-login">
+                <img src="{% static 'img/login.svg' %}" class="left-login-image" alt="loginpc">
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

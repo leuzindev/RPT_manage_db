@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<title>Home-Page</title>
+
+<link rel="stylesheet" href="{% static 'css/homepage_1.css' %}">
+
+{% include 'partials/_navbar.html' %}
+
+<section class="principal">
+  <table class="table table-dark table-striped tabela__principal">
+      <thead>
+      
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Nome</th>
+          <th scope="col">Preço</th>
+          <th scope="col">Descrição</th>
+          <th scope="col">Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+      {% for product in products %}
+        <tr>
+          <th scope="row">{{ product.id }}</th>
+          <td>{{ product.name }}</td>
+          <td>{{ product.price }}</td>
+          <td>{{ product.description }}</td>
+          <td class="td__checkbox">
+            <input type="checkbox" name="checkbox" class="checkbox__action">
+         </td>
+        </tr>
+        
+        {% endfor %}
+      </tbody>
+    </table>
+</section>
+
+{% endblock %}

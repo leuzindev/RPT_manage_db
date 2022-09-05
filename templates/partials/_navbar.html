@@ -1,0 +1,60 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/home_page.css' %}">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- Container wrapper -->
+    <div class="container">
+      <!-- Navbar brand -->
+  
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Left links -->
+        <ul class="navbar-nav me-3">
+          <li class="nav-item">
+            <a class="nav-link active d-flex align-items-center" aria-current="page" href="#"><i
+                class="fas fa-bars pe-2"></i>Menu</a>
+          </li>
+        </ul>
+        <!-- Left links -->
+  
+        <form class="d-flex align-items-center w-100 form-search">
+          <div class="input-group">
+            
+            <ul class="dropdown-menu dropdown-menu-dark fa-ul"></ul>
+            <form action="#" method="POST" id="busca-form">
+            <input type="text" name="buscar" class="form-control formulario__procura" placeholder="Buscar" aria-label="Search" 
+            style="border-radius: 10px" />
+            </form>
+          </div>
+          <a href="#!" class="text-white"><i class="fas fa-search ps-3" ></i></a>
+        </form>
+  
+        <ul class="navbar-nav ms-3">
+          <li class="nav-item me-3">
+            <a class="nav-link d-flex align-items-center" href="{% url 'logout' %}">Logout</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center me-3" href="http://127.0.0.1:8000/admin/">
+              <i class="fas fa-bookmark pe-2"></i> Admin
+            </a>
+          </li>
+          <li class="nav-item" style="width: 65px;">
+            <a class="nav-link d-flex align-items-center" href="#">Config</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+
