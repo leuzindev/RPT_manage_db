@@ -15,7 +15,7 @@ def login(request):
             if user is not None:
                 auth.login(request, user)
                 return redirect('home_list')
-
+            
     return render(request,'login.html')
 
 
@@ -50,6 +50,12 @@ def logout(request):
     """ Realizar o logout """
     auth.logout(request)
     return redirect('login')
+
+
+def cadastro(request):
+    """ Realiza o cadastro de um usuario """
+    return render(request, 'cadastro.html')
+
 
 
 # def buscar(request):

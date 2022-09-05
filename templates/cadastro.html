@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<title>Cadastro</title>
+
+<link rel="stylesheet" href="{% static 'css/cadastropage_1.css' %}">
+
+<body>
+        <div class="main-login">
+    
+            <div class="main-container">
+                <div class="left-login">
+                    <img src="{% static 'img/cad.svg' %}" class="left-login-image" alt="loginpc">
+                </div>
+                <div class="right-login">
+                    <form action="">
+                    <div class="card-login">
+                        <h1>CADASTRO</h1>
+                        <div class="textfield">
+                            <label for="nome">Nome</label>
+                            <input type="email" name="nome" placeholder="Nome" class="">
+                        </div>
+                        <div class="textfield">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" placeholder="E-mail" class="">
+                        </div>
+                        <div class="textfield">
+                            <label for="senha">Senha</label>
+                            <input type="password" name="password" placeholder="Senha" class="">
+                        </div>
+                        <div class="textfield">
+                            <label for="senha">Senha novamente</label>
+                            <input type="password" name="password" placeholder="Senha" class="">
+                        </div>
+                 
+                            <button type="submit"class="btn-login">Registrar</button>
+                    </div>
+                </form>
+                </div>
+
+            </div>
+        </div>
+    
+</body>
+
+
+{% endblock %}

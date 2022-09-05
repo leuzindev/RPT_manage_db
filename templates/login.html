@@ -5,7 +5,7 @@
 
 <title>Login</title>
 
-<link rel="stylesheet" href="{% static '/css/loginpage_1.css' %}">
+<link rel="stylesheet" href="{% static '/css/loginpage_2.css' %}">
 
     <div class="main-login">
 
@@ -16,19 +16,22 @@
                 <div class="card-login">
                     <h1>BEM-VINDO</h1><br>
                     <div class="textfield">
-                        <label for="usuario">Email</label>
-                        <input type="email" name="email" placeholder="Email" class="usuariojs">
+                        <label for="usuario">E-mail</label>
+                        <input type="email" name="email" placeholder="E-mail" class="usuariojs">
                     </div>
                     <div class="textfield">
                         <label for="senha">Senha</label>
                         <input type="password" name="senha" placeholder="Senha" class="senhajs">
                     </div>
-                        <button type="submit"class="btn-login">Login</button>
+                    <div class="botoes">
+                        <button type="submit" class="btn-login">Login</button>
+                        <button type="submit" class="btn-cadastro">Cadastre-se</button>
+                    </div>
                 </div>
                 </form>
             </div>
             <div class="left-login">
-                <img src="{% static 'img/login.svg' %}" class="left-login-image" alt="loginpc">
+                <img src="{% static 'img/login1.svg' %}" class="left-login-image" alt="loginpc">
             </div>
         </div>
     </div>

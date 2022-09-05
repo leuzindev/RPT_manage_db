@@ -8,5 +8,6 @@ urlpatterns = [
     path('home/', views.home_list, name='home_list'),
     path('home/<int:product_id>', views.home_id, name='home_id'),
      path('logout', views.logout, name='logout'),
+     path('cadastro', views.cadastro, name='cadastro')
     #  path('buscar', views.buscar, name='buscar'),
 ]
