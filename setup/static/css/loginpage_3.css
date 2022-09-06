@@ -58,6 +58,7 @@ body * {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 
 }
 
@@ -77,7 +78,7 @@ body * {
 
 .card-login>h1 {
     color: #F0F0F0;
-    font-weight: 800;
+    font-weight: 700;
     margin: 0;
 }
 
@@ -97,7 +98,7 @@ body * {
     border: none;
     border-radius: 8px;
     padding: 15px;
-    background-color: #515153;   
+    background-color: #515153;
     color: #f0ffffde;
     font-size: 12pt;
     box-shadow: 0px 10px 40px #00000056;
@@ -112,8 +113,8 @@ body * {
     
 }
 
-
 .textfield>label {
+    font-size: 14pt;
     color: #f0ffffde;
     margin-bottom: 10px;
 }
@@ -133,7 +134,7 @@ body * {
     border-radius: 8px;
     outline: none;
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: 3px;
     color: #000000;
     background: #F0F0F0;
@@ -150,7 +151,7 @@ body * {
     border-radius: 8px;
     outline: none;
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: 3px;
     color: #000000;
     background: #F0F0F0;

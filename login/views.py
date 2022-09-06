@@ -76,24 +76,17 @@ def cadastro(request):
         return render(request, 'cadastro.html')
     
 
-
 def buscar(request):
     
-    buscar = request.GET.get('buscar')
-    
-    if buscar:
-        
-        list_products = Product.objects.filter(name__icontains=buscar)
-    
-    products = get_object_or_404(Product, pk=product_id)
+    lista_product = Product.objects.order_by('name')
     
     if 'buscar' in request.GET:
         nome_a_buscar = request.GET['buscar']
         if buscar:
-            products.filter(name__icontains=nome_a_buscar)
+            lista_products = lista_product.filter(name__icontains=nome_a_buscar)
             
     data = {
-        'products': products
+        'products': lista_products
     }
     
     return render(request, 'home_page.html', data)

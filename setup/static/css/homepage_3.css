@@ -26,8 +26,18 @@ body{
 }
 
 .checkbox__action{
-    height: 50px;
-    width: 25px;
+    height: 40px;
+    width: 20px;
     
 }
 
+.invisivel {
+	display: none;
+}
+
+footer {
+
+    bottom:0;
+    left:0;
+    right:0;
+}
