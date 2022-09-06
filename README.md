@@ -3,7 +3,7 @@
 #Modelo das Migrations (X F)
 
 
-#Pagina de Login  ---> Redirecionamento para pag de Cadastro
+#Pagina de Login  (X)
 
 
 #Pagina de Listagem de Produtos (X)
@@ -18,10 +18,10 @@
 #Sistema de Logout (X)
 
 
-#Responsividade  ---> Arrumar a responsividade da pag
+#Responsividade  (X)
 
 
-#Pagina de Cadastro  ---> Criação de Usuario no Banco de dados
+#Pagina de Cadastro  (X)
 
 
 #Menu Buscar ---> Funcionalidade

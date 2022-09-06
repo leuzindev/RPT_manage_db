@@ -15,12 +15,13 @@
                     <img src="{% static 'img/cad.svg' %}" class="left-login-image" alt="loginpc">
                 </div>
                 <div class="right-login">
-                    <form action="">
+                    <form action="{% url 'cadastro' %}" method="POST">
+                    {% csrf_token %}
                     <div class="card-login">
                         <h1>CADASTRO</h1>
                         <div class="textfield">
                             <label for="nome">Nome</label>
-                            <input type="email" name="nome" placeholder="Nome" class="">
+                            <input type="name" name="nome" placeholder="Nome" class="">
                         </div>
                         <div class="textfield">
                             <label for="email">E-mail</label>
@@ -32,7 +33,7 @@
                         </div>
                         <div class="textfield">
                             <label for="senha">Senha novamente</label>
-                            <input type="password" name="password" placeholder="Senha" class="">
+                            <input type="password" name="password2" placeholder="Senha" class="">
                         </div>
                  
                             <button type="submit"class="btn-login">Registrar</button>

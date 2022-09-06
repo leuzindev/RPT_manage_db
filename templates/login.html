@@ -25,7 +25,7 @@
                     </div>
                     <div class="botoes">
                         <button type="submit" class="btn-login">Login</button>
-                        <button type="submit" class="btn-cadastro">Cadastre-se</button>
+                        <button type="button" onclick="" class="btn-cadastro" id="botaoCadasto">Cadastre-se</button>
                     </div>
                 </div>
                 </form>
@@ -35,5 +35,15 @@
             </div>
         </div>
     </div>
+
+
+<script>
+
+const botaoCad = document.getElementById('botaoCadasto')
+botaoCad.addEventListener('click', () => {
+    console.log('local')
+    window.location.href = "/cadastro"
+})
+</script>
 
 {% endblock %}

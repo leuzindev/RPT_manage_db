@@ -54,29 +54,48 @@ def logout(request):
 
 def cadastro(request):
     """ Realiza o cadastro de um usuario """
-    return render(request, 'cadastro.html')
-
-
-
-# def buscar(request):
-    
-#     buscar = request.GET.get('buscar')
-    
-#     if buscar:
+    if request.method == 'POST':
+        nome = request.POST['nome']
+        email = request.POST['email']
+        senha = request.POST['password']
+        senha2 = request.POST['password2']
         
-#         list_products = Product.objects.filter(name__icontains=buscar)
+        if not nome.strip():
+            return redirect('cadastro')
+        if not email.strip():
+            return redirect('cadastro')
+        if senha != senha2:
+            return redirect('cadastro')
+        if User.objects.filter(email = email).exists():
+            return redirect('cadastro')
+        
+        user = User.objects.create_user(username=nome, email=email, password=senha)
+        user.save()
+        return redirect('login')
+    else:
+        return render(request, 'cadastro.html')
     
-#     products = get_object_or_404(Product, pk=product_id)
+
+
+def buscar(request):
     
-#     if 'buscar' in request.GET:
-#         nome_a_buscar = request.GET['buscar']
-#         if buscar:
-#             products.filter(name__icontains=nome_a_buscar)
+    buscar = request.GET.get('buscar')
+    
+    if buscar:
+        
+        list_products = Product.objects.filter(name__icontains=buscar)
+    
+    products = get_object_or_404(Product, pk=product_id)
+    
+    if 'buscar' in request.GET:
+        nome_a_buscar = request.GET['buscar']
+        if buscar:
+            products.filter(name__icontains=nome_a_buscar)
             
-#     data = {
-#         'products': products
-#     }
+    data = {
+        'products': products
+    }
     
-#     return render(request, 'home_page.html', data)
+    return render(request, 'home_page.html', data)
 
 
