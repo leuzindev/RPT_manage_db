@@ -39,3 +39,7 @@
 #Exibição de erro ---> Implementar os erros da validação no HTML  ( )
 
 
+#Footer na home ---> Deixar o Footer no final da pagina Home      ( )
+
+
+
