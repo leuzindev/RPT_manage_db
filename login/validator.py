@@ -2,6 +2,7 @@ from django.shortcuts import redirect
 from rest_framework import serializers
 
 class Validate:
+    """  Classe quem tem Metodos para validações de LOGIN """
     
     def usuarioValido(nome, email, senha, senha2):
         if not nome.strip():

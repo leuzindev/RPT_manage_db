@@ -9,6 +9,7 @@ def login(request):
     if request.method == 'POST':
         email = request.POST['email']
         senha = request.POST['senha']
+        # Valida o Login
         if Validate.loginValido(email, senha):
             return redirect('/')
         if User.objects.filter(email = email).exists():
@@ -61,7 +62,7 @@ def cadastro(request):
         email = request.POST['email']
         senha = request.POST['password']
         senha2 = request.POST['password2']
-        
+        # Valida o Usuario
         if Validate.usuarioValido(nome, email, senha, senha2):
             return redirect('cadastro')
         if User.objects.filter(email = email).exists():

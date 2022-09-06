@@ -1,30 +1,38 @@
-# SYSTEM
+# Tarefas e Feitos
 
-#Modelo das Migrations (X F)
-
-
-#Pagina de Login  (X)
+#Modelo das Migrations                                            (F)
 
 
-#Pagina de Listagem de Produtos (X)
+#Pagina de Login                                                  (X)
 
 
-#Rotas (X F)
+#Pagina de Listagem de Produtos                                   (X)
 
 
-#Sistema de Login  (X)
+#Rotas                                                            (X)
 
 
-#Sistema de Logout (X)
+#Sistema de Login                                                 (X)
 
 
-#Responsividade  (X)
+#Sistema de Logout                                                (X)
 
 
-#Pagina de Cadastro  (X)
+#Responsividade                                                   (X)
+
+                     
+#Pagina de Cadastro                                               (X)
 
 
-#Menu Buscar ---> Funcionalidade
+#Validators de Login e Criar Usuário                              (X)
 
 
-#Validators de Login e Criar Usuário ---> Desenovlver
+#Menu Buscar ---> Funcionalidade                                  ( )
+
+
+#Encapsular --->  Script que esta em Login e Cadastro para STATIC ( )
+
+
+#Exibição de erro ---> Implementar os erros da validação no HTML  ( )
+
+
