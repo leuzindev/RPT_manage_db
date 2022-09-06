@@ -18,6 +18,9 @@
 #Sistema de Logout                                                (X)
 
 
+#Sistema de Cadastro                                              (X)
+
+
 #Responsividade                                                   (X)
 
                      
