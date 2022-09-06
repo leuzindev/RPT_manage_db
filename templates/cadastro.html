@@ -5,7 +5,7 @@
 
 <title>Cadastro</title>
 
-<link rel="stylesheet" href="{% static 'css/cadastropage_3.css' %}">
+<link rel="stylesheet" href="{% static 'css/cadastropage_4.css' %}">
 
 <body>
         <div class="main-login">
@@ -35,8 +35,10 @@
                             <label for="senha">Senha novamente</label>
                             <input type="password" name="password2" placeholder="Senha" class="">
                         </div>
-                 
-                            <button type="submit"class="btn-login">Registrar</button>
+                        <div class="botoes">
+                            <button type="submit"class="btn-registro">Registrar</button>
+                            <button class="btn-voltar" id="Btn-voltar" type="button"><img src="{% static 'img/voltar.png' %}" class="voltar"></button>
+                        </div>
                     </div>
                 </form>
                 </div>
@@ -47,5 +49,15 @@
 </body>
 
 {% include 'partials/_footer.html' %}
+
+<script>
+
+const botaoCad = document.getElementById('Btn-voltar');
+botaoCad.addEventListener('click', () => {
+    window.location.href = "/"
+});
+
+</script>
+    
 
 {% endblock %}

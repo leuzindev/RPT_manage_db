@@ -138,7 +138,50 @@ body * {
     margin-top: 40px;
 }
 
+.botoes{
+    display: flex;
+    align-items: center;
+}
 
+.btn-registro {
+    width: 360px;
+    height: 50px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #000000;
+    background: #F0F0F0;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px rgba(186, 205, 195, 0.322);
+    transition: 1s all;
+    margin-top: 40px;
+}
+
+.btn-voltar {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #000000;
+    background: #F0F0F0;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px rgba(186, 205, 195, 0.322);
+    transition: 1s all;
+    margin-top: 40px;
+}
+
+.voltar{
+    width: 30px;
+}
 
 .btn-login:hover {
     transform: scale(1.1);

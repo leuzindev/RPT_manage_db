@@ -2,13 +2,15 @@ from django.shortcuts import render, get_object_or_404, redirect
 from product.models import Product
 from django.contrib import auth
 from django.contrib.auth.models import User
-
+from login.validator import Validate
 
 def login(request):
     """ Pagina de Login """
     if request.method == 'POST':
         email = request.POST['email']
         senha = request.POST['senha']
+        if Validate.loginValido(email, senha):
+            return redirect('/')
         if User.objects.filter(email = email).exists():
             nome = User.objects.filter(email=email).values_list('username', flat= True).get()
             user = auth.authenticate(request, username=nome, password=senha)
@@ -20,7 +22,7 @@ def login(request):
 
 
 def home_list(request):
-    """ pagina de listagem de produtos """
+    """ Pagina de listagem de produtos """
     if request.user.is_authenticated:
         products = Product.objects.order_by('id')
         data = {
@@ -60,15 +62,12 @@ def cadastro(request):
         senha = request.POST['password']
         senha2 = request.POST['password2']
         
-        if not nome.strip():
-            return redirect('cadastro')
-        if not email.strip():
-            return redirect('cadastro')
-        if senha != senha2:
+        if Validate.usuarioValido(nome, email, senha, senha2):
             return redirect('cadastro')
         if User.objects.filter(email = email).exists():
             return redirect('cadastro')
         
+        # Cria o Usuario
         user = User.objects.create_user(username=nome, email=email, password=senha)
         user.save()
         return redirect('login')
