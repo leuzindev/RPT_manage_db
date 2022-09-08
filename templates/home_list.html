@@ -5,15 +5,18 @@
 
 <title>Home-Page</title>
 
-<link rel="stylesheet" href="{% static 'css/homepage_3.css' %}">
-<link rel="stylesheet" href="{% static 'css/footer_3.css' %}">
-
+<link rel="stylesheet" href="{% static 'css/homepage_7.css' %}">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+<script src="{% static 'js/datatables.js' %}"></script>
 
 
 {% include 'partials/_navbar.html' %}
 
 <section class="principal">
-  <table class="table table-dark table-striped tabela__principal">
+  <div class="container__tabela">
+  <table id="example" class="table table-dark table-striped tabela__principal">
       <thead>
       
         <tr>
@@ -39,6 +42,7 @@
         {% endfor %}
       </tbody>
     </table>
+  </div>
 </section>
 
 

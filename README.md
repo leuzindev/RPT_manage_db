@@ -27,7 +27,7 @@
 #Validators de Login e Criar Usuário                              (X)
 
 
-#Menu Buscar ---> Funcionalidade                                  ( )
+#Menu Buscar                                                      (X)
 
 
 #Encapsular --->  Script que esta em Login e Cadastro para STATIC ( )
@@ -36,3 +36,4 @@
 #Exibição de erro ---> Implementar os erros da validação no HTML  ( )
 
 
+#Footer na home ---> Deixar o Footer no final da pagina Home      ( )

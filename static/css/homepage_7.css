@@ -1,5 +1,7 @@
 body{
     background-color:  #2C3034;
+
+
 }
 
 .principal{
@@ -31,3 +33,53 @@ body{
     
 }
 
+
+footer {
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+
+
+#example_filter{
+    color: white;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+#example_length{
+    padding-top: 10px;
+    color: white;
+}
+
+select{
+    color: grey;
+    padding-left: 10px;
+
+}
+
+input{
+    color: white;
+}
+
+.container__tabela{
+    margin: 10px;
+}
+#example_info{
+    color: white;
+}
+#example_next{
+    color: white;
+}
+
+.paginate_button {
+    background-color: white;
+}
+
+.paginate_button .current{
+    background-color: white ;
+}
+
+.previous{
+    background-color: white;
+}
