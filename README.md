@@ -18,6 +18,9 @@
 #Sistema de Logout                                                (X)
 
 
+#Sistema de Cadastro                                              (X)
+
+
 #Responsividade                                                   (X)
 
                      
@@ -36,4 +39,11 @@
 #Exibição de erro ---> Implementar os erros da validação no HTML  ( )
 
 
+<<<<<<< HEAD
 #Footer na home ---> Deixar o Footer no final da pagina Home      ( )
+=======
+#Footer na home ---> Deixar o Footer no final da pagina Home      ( )
+
+
+
+>>>>>>> cdf9a4edbb30b2631181492d2ac1734095957eb4
