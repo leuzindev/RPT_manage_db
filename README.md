@@ -1,49 +1,100 @@
-# Tarefas e Feitos
-
-#Modelo das Migrations                                            (F)
+# # RPT Manage DB
 
 
-#Pagina de Login                                                  (X)
+![home]()
 
 
-#Pagina de Listagem de Produtos                                   (X)
+---
+
+### Conteúdos
+
+- [Descrição](#descrição)
+- [Como usar](#como-usar)
+- [Imagens](#imagens-do-site)
+- [Author Info](#author-info)
+
+---
+
+## Descrição
+
+Projeto focado no desenvolvimento Full-Stack, Com esse projeto aprendi a usar o FRAMEWORK do PYTHON Django e consumir uma 
+api do back-end passando para o front-end e manipulando ela, o projeto conta com um sistema de login funcional com hash de senha de usuário
+para melhorar a segurança do sistema, foi utilizado figma para desenhar e prototipar as telas da aplicação.
+
+- Pagina para Desktop 
+- Sistema de Login
+- Sistema de Cadastro
+- Listagem de Produtos
+- Filtro em Tempo real de produtos
+- Busca de produtos
+- Sistema de Hash na senha do usuario
+- Validação de campos
+- Sistema de Logout
+
+#### Tecnologias
+
+- Django
+- Python
+- Javascript
+- HTML
+- CSS 
+- Figma
+- Sqlite
+
+---
+
+## Como usar
+
+#### Instalação
+
+- Utilize o comando 
 
 
-#Rotas                                                            (X)
+```html
+  git clone https://github.com/leuzindev/RPT_manage_db.git
+  cd RPT_manage_db
+  python manage.py makemigrations
+  python manage.py migrate
+  python manage.py runserver
+```
 
+- Se os comandos python não funcionarem utilize no lugar de "python"
 
-#Sistema de Login                                                 (X)
+```html
 
+  py
+  pyhton3
+ 
 
-#Sistema de Logout                                                (X)
-
-
-#Sistema de Cadastro                                              (X)
-
-
-#Responsividade                                                   (X)
-
-                     
-#Pagina de Cadastro                                               (X)
-
-
-#Validators de Login e Criar Usuário                              (X)
-
-
-#Menu Buscar                                                      (X)
-
-
-#Encapsular --->  Script que esta em Login e Cadastro para STATIC ( )
-
-
-#Exibição de erro ---> Implementar os erros da validação no HTML  ( )
-
-
-<<<<<<< HEAD
-#Footer na home ---> Deixar o Footer no final da pagina Home      ( )
-=======
-#Footer na home ---> Deixar o Footer no final da pagina Home      ( )
+```
 
 
 
->>>>>>> cdf9a4edbb30b2631181492d2ac1734095957eb4
+
+---
+
+## Imagens do site
+
+1 - Login
+
+
+
+2 - Cadastro
+
+
+
+3 - Lista
+
+
+
+
+
+
+---
+
+## Author Info
+
+- Twitter - [@leuzin_pv](https://twitter.com/leuzin_pv)
+- Instagram - [Leuzin._](https://www.instagram.com/leuzin._/)
+
+
